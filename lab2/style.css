@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 85%;
+    margin: auto;
+}
+
+.profile > img{
+    display: block;
+    height: 363px;
+    width: 363px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 21px 15px 21px -5px rgba(17, 17, 17, 0.35);
+}
+
+.describe{
+    margin-top: 50px;
+    color: #f4f1d0;
+    text-align: center;
+}
+.describe > h2{
+    font-weight: 400;
+    font-size: large;
+}
+
+h2.languages{
+    background: -webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 25px;
+}
+
+table.skill{
+    margin: auto;
+    color: #f4f1d0;
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    min-height: 5vh;
+    background-color: #f4f1d0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer > a {
+    color: #222;
+    padding-right: 20px;
+}
+
+/*technical report page styling*/
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #eeeeee;
+}
+
+div {
+    margin-top: 30px;
+}
+
+.reportdetails>h3 {
+    color: #00adb5;
+}
+
+.reportdetails {
+    width: 96%;
+    margin: auto;
+    color: #eeeeee;
+}
+
+/*password page styling*/
+
+input{
+    width: 200px;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
