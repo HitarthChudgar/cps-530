@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Satisfication Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Interdisplay=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    html,
+    body {
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        background: #232526;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #414345, #232526);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #414345, #232526);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-align: center;
+        background-attachment: fixed;
+    }
+
+    #main {
+        height: auto;
+        width: 600px;
+        margin: 10px auto;
+        background: white;
+        padding: 1px;
+        -webkit-box-shadow: 10px 10px 49px -13px rgba(0, 0, 0, 0.39);
+        -moz-box-shadow: 10px 10px 49px -13px rgba(0, 0, 0, 0.39);
+        box-shadow: 10px 10px 49px -13px rgba(0, 0, 0, 0.39);
+        border-radius: 15px;
+        transition: ease all 0.3s;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    input,
+    select,
+    textarea {
+        margin: 3px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+
+    .btn {
+        border-radius: 8px;
+        border: none;
+        color: #232526;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        box-shadow: 0px 14px 18px 0px rgba(0, 0, 0, 0.10), 0px 17px 50px 0px rgba(0, 0, 0, 0.10);
+        color: white;
+        background-color: #00ff90;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* responsive width */
+    @media screen and (max-width: 768px) {
+        #main {
+            width: 350px;
+        }
+    }
+</style>
+
+<body>
+    <div id="main">
+        <h2>Annual User Survey</h2>
+        <p>Thanks for your continued loyalty with us!<br>To help us improve, please take a moment to complete this
+            form.<br>Your feedback is valuable to us</p>
+        <img src="./img/teamwork.png" alt="people">
+        <form action="../cgi-bin/cps530/part2.cgi" method="post">
+            <br>
+            First Name: <input required type="text" name="firstName" placeholder="First name...">
+            <br><br>
+            Last Name: <input required type="text" name="lastName" placeholder="Last name...">
+            <br><br>
+            Email: <input required text="email" name="email" placeholder="example@domain.com">
+            <br><br>
+            Gender:
+            <input required type="radio" name="gender" value="Male">Male
+            <input required type="radio" name="gender" value="Female">Female
+            <input required type="radio" name="gender" value="Other">Other
+            <br><br>
+            Country of Residence:
+            <select required name="country">
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            Rating:
+            <input required type="radio" name="stars" value="1">1&#9733;
+            <input required type="radio" name="stars" value="2">2&#9733;
+            <input required type="radio" name="stars" value="3">3&#9733;
+            <input required type="radio" name="stars" value="4">4&#9733;
+            <input required type="radio" name="stars" value="5">5&#9733;
+            <br><br>
+            Comments:
+            <br>
+            <textarea name="comments" rows="10" cols="40"></textarea>
+            <br><br>
+            <input class="btn" type="submit" value="Submit Feedback">
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
